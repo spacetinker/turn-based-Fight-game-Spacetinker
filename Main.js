@@ -10,10 +10,11 @@ var moveSetMana = [0, 0, 0, 0, 2, 2];
 var moveSetAtk = [10, 20, 30, 0, 15, 35];
 var moveSetDef = [0, 0, 0, 5, 0, 0];
 var moveSetEffect = [0, 0, 1, 0, 2, 1];
+var movesForTurn = [];
 
 function move(type){
   var selectedMove = moveSetId.index(type)
-  if(moveSetCost[selectedMove] <= playerStamina && moveSetCost[selectedMove] <= playerMana){
-    playerMana
+  if(moveSetCost[selectedMove] <= playerStamina && moveSetMana[selectedMove] <= playerMana){
+    append(movesForTurn, selectedMove);
   }
 }
