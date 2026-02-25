@@ -1,7 +1,12 @@
 <html>
   <body>
-    <div id="stats">
+    <div id="playerStats">
       <p>100 HP</p>
+      <p>10 Stamina</p>
+      <p>5 Mana</p>
+    </div>
+    <div id="opponentStats">
+      <p>90 HP</p>
       <p>10 Stamina</p>
       <p>5 Mana</p>
     </div>
@@ -21,6 +26,17 @@
       <button id="basicBlock" onclick="move("bl")">
         basic Block
         <p>0 stamina</p>
+      </button>
+      <button id="tearBlade" onclick="move("mtb")" hidden>
+        Tearing Blade
+        <p>2 Stamina</p>
+      </button>
+      <button id="fireBall" onclick="move("mfb")" hidden>
+        FireBall
+        <p>2 Stamina</p>
+      </button>
+      <button id="endTurn" onclick="nextTurn()">
+        End Turn
       </button>
     </div>
   </body>
