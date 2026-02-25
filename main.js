@@ -20,5 +20,5 @@ function move(type){
 }
 
 function nextTurn() {
-  document.getElementById("testArea").innerHtml = (movesForTurn.join(","));
+  document.getElementById("testArea").innerHTML = (movesForTurn.join(","));
 }
