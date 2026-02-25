@@ -18,3 +18,7 @@ function move(type){
     append(movesForTurn, selectedMove);
   }
 }
+
+function nextTurn() {
+  document.getElementById("testArea").innerHtml = (movesForTurn.join(","));
+}
