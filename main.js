@@ -15,7 +15,7 @@ var movesForTurn = [];
 function move(type){
   var selectedMove = moveSetId.indexOf(type);
   if(moveSetCost[selectedMove] <= playerStamina && moveSetMana[selectedMove] <= playerMana){
-    movesForTurn.append(selectedMove);
+    movesForTurn.push(selectedMove);
   }
 }
 
